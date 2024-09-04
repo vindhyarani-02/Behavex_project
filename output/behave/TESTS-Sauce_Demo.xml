@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="26.407015562057495" tests='3' skipped='0'
+name="Sauce_Demo" failures='0' errors='0'><testcase time="6.996951103210449" name="User_Successfully_Logs_Into_The_Demo_Application" status="passed"
+         classname="Sauce_Demo" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: User successfully logs into the demo application
+e                given I am on the Demo Login Page ... passed in 5.378s 
+                when I fill the account information for account StandardUser into the Username field and the password field ... passed in 1.234s 
+                when I click the Login Button ... passed in 0.2824s 
+                then I am redirected to demo main page ... passed in 0.02213s 
+                then I verify the App Logo exists ... passed in 0.08023s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="6.734321117401123" name="Failed_Login" status="passed"
+         classname="Sauce_Demo" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Failed Login
+e                given I am on the Demo Login Page ... passed in 5.23s 
+                when I fill the account information for account LockedOutUser into the Username field and the Password field ... passed in 1.206s 
+                when I click the Login Button ... passed in 0.2036s 
+                then I verify the Error Message contains the text &#34;Epic sadface: Sorry, this user has been locked out.&#34; ... passed in 0.09452s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="12.675743341445923" name="Extract_Data" status="passed"
+         classname="Sauce_Demo" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Extract data
+e                given I am logged in ... passed in 6.434s 
+                when I am on the inventory page ... passed in 0.1018s 
+                then I extract content from the web page ... passed in 0.9224s 
+                then Save it to a text file ... passed in 0.003922s 
+                then I log out ... passed in 5.196s 
+                then I verify I am on the Login page again ... passed in 0.01727s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

@@ -1,0 +1,9 @@
+Feature: Sauce demo # features/Sauce_Demo.feature:1
+
+  Scenario: User successfully logs into the demo application                                                    # features/Sauce_Demo.feature:2
+    Given I am on the Demo Login Page                                                                           # features/steps/Sauce_Demo_steps.py:8
+    When I fill the account information for account StandardUser into the Username field and the password field # features/steps/Sauce_Demo_steps.py:13
+    And I click the Login Button                                                                                # features/steps/Sauce_Demo_steps.py:24
+    Then I am redirected to demo main page                                                                      # features/steps/Sauce_Demo_steps.py:29
+    And I verify the App Logo exists                                                                            # features/steps/Sauce_Demo_steps.py:35
+

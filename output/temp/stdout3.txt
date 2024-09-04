@@ -1,0 +1,8 @@
+Feature: Sauce demo # features/Sauce_Demo.feature:1
+
+  Scenario: Failed Login                                                                                         # features/Sauce_Demo.feature:9
+    Given I am on the Demo Login Page                                                                            # features/steps/Sauce_Demo_steps.py:8
+    When I fill the account information for account LockedOutUser into the Username field and the Password field # features/steps/Sauce_Demo_steps.py:13
+    And I click the Login Button                                                                                 # features/steps/Sauce_Demo_steps.py:24
+    Then I verify the Error Message contains the text "Epic sadface: Sorry, this user has been locked out."      # features/steps/Sauce_Demo_steps.py:40
+

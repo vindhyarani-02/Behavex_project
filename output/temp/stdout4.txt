@@ -1,0 +1,10 @@
+Feature: Sauce demo # features/Sauce_Demo.feature:1
+
+  Scenario: Extract data                      # features/Sauce_Demo.feature:15
+    Given I am logged in                      # features/steps/Sauce_Demo_steps.py:48
+    When I am on the inventory page           # features/steps/Sauce_Demo_steps.py:66
+    Then I extract content from the web page  # features/steps/Sauce_Demo_steps.py:70
+    And Save it to a text file                # features/steps/Sauce_Demo_steps.py:83
+    Then I log out                            # features/steps/Sauce_Demo_steps.py:88
+    And I verify I am on the Login page again # features/steps/Sauce_Demo_steps.py:95
+
